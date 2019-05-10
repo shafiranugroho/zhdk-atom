@@ -14,54 +14,129 @@
 }
 
 /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 img {
-  height:auto;
-  width:100%;
-  margin-top:2.0rem;
+.col-1 {
+  width: 8.33%;
 }
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 img {
+  border-radius: 0.2rem;
+  height: auto;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+  padding-left: 5%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+
   /* For mobile phones: */
-  .col-4 {
-  }
   [class*="col-"] {
     width: 100%;
   }
+
+  .button-row {
+    margin-left:32.5%;
+    margin-right:auto;
+  }
+
+  .col-7 h3 {
+    margin-left:37.5%;
+    margin-right:auto;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+  /* For iPad: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .button-row {
+    margin-left:20.5%;
+    margin-right:auto;
+  }
+
+  .col-7 h3 {
+    margin-left:32.5%;
+    margin-right:auto;
+  }
+
+}
+
+@media only screen and (min-width: 1080px) {
+
+  /* For Desktop: */
+  .col-7 h1 {
+    padding-top:2.0rem;
+  }
+
 }
 
 .container {
-  margin-top:3.0rem;
-  margin-bottom:0.0rem;
-  margin-left:10.0rem;
-  margin-right:10.0rem;
+  margin-top: 0.0rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 header {
+  z-index: 10;
   box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.10);
   min-height: 2.0rem;
   width: 100%;
   top: 0;
   position: fixed;
-  z-index: 10;
   margin: 0;
 }
 
 body {
   font-family: Helvetica;
   margin-top: 0.0rem;
-  margin-bottom: 3.0rem;
+  margin-bottom: 1.0rem;
   margin-left: 0.0rem;
   margin-right: 0.0rem;
 }
@@ -75,7 +150,6 @@ body a {
   max-width: 100%;
   height: auto;
 }*/
-
 label {}
 
 input {
@@ -123,7 +197,7 @@ h2 {
 }
 
 h3 {
-  margin-bottom:2.0rem;
+  margin-bottom: 2.0rem;
   color: #000;
   font-size: 0.9rem;
   font-family: "PT Sans";
